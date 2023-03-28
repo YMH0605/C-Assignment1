@@ -1,0 +1,50 @@
+
+1. What type would you choose for the following “numbers”?
+A person’s telephone number: String since phone number may contains "-" or parenthesis
+A person’s height: double 
+A person’s age: int
+A person’s gender (Male, Female, Prefer Not To Answer): Enum
+A person’s salary: double
+A book’s ISBN: string
+A book’s price: double
+A book’s shipping weight: double
+A country’s population: long, int is also suitable here since no country in the world has population larger than 2,147,483,647
+The number of stars in the universe: long
+The number of employees in each of the small or medium businesses in the
+United Kingdom (up to about 50,000 employees per business): int
+
+2. What are the difference between value type and reference type variables?
+1). A data type holds a data value within its own memory, whereas reference type variables store the addresses where the value is being stored
+2). Each data type variable has its own copy of data, while two reference type variables could point to the same object
+3). When passing value type variable,the system create a separate copy of variable and passed it, therefore change value in one method would not result in
+change of value in another method. When passing reference type variable, the system does not create a separate copy of variable, it passes the variable's 
+address. Thus change the value of a reference variable in one method would result in value change in another method.
+
+
+3. What happens when you divide an int variable by 0?
+Divide an int variable by 0 will result in DivideByZeroException
+
+4. What happens when you divide a double variable by 0?
+Divide an double variable by 0 will result in ∞ or -∞, if the double variable is 0.0, the result would be NaN
+
+5. What happens when you overflow an int variable, that is, set it to a value beyond its
+range?
+int: -2,147,483,648 to 2,147,483,647
+If you pass the maximum value (the upper range) of an int variable, it will go back to its mininal value plus the exceeding part minus 1. For example, if 
+you set i = 2,147,483,647, which is the upperbond, i += 1 will change i from upper bound to the lower bound, -2,147,483,648.
+Vise versa, if you pass the minimum or the lower bound, it will go to the maximum. Example: set j = -2,147,483,648 and j -= 1, j will become 2,147,483,647,
+the upper bound, and the exceeding part will countinue to be minus.
+
+6. What is the difference between x = y++; and x = ++y;?
+
+7. What is the difference between break, continue, and return when used inside a loop
+statement?
+Break statement will exist and terminate the loop, transfer control to the statements follows the loop
+Continue statemnt will skip this iteration and goes to the next
+Return statement will terminate the loop and return a value
+
+8. What are the three parts of a for statement and which of them are required?
+Three parts of a for statement are Initialization, Condition and Iteration.
+For example, a for loop: for(int i = 0(initialization); i < 10(condition); i++(iteration))
+All three part are option, but if we miss the condition part, the system will evaluate condition as true and thus the loop will never stop,
+so somehow the condition part is required.
