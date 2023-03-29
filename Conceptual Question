@@ -36,6 +36,10 @@ Vise versa, if you pass the minimum or the lower bound, it will go to the maximu
 the upper bound, and the exceeding part will countinue to be minus.
 
 6. What is the difference between x = y++; and x = ++y;?
+In x = y++, x is first assigend with y's value, and then y is increment by 1.
+For example, int y = 0; x = y++; then x = 0, y = 1.
+In x = ++y, y is first incresed by 1, and then x is assigned with y's value.
+For example, int y = 0; x = ++y; then x = 1 and y = 1
 
 7. What is the difference between break, continue, and return when used inside a loop
 statement?
